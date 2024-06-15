@@ -1,0 +1,52 @@
+div#footer{
+	width : 1000px;
+	height : 250px;
+	margin : auto;
+}
+
+/* ============================
+*/
+section#footerLeft{
+	float : left;
+	width : 500px;
+	height : 250px;
+}
+#footerLeft > img{
+	clear : left;
+	display : block;
+	margin : 20px;
+}
+#footerLeft > strong{
+	font-size : 24px;
+	font-weight : bold;
+	margin-left : 20px;
+}
+#footerLeft > p{
+	font-size : 18px;
+	font-weight : bold;
+	margin-left : 20px;
+}
+
+/* ============================
+*/
+aside#footerRight{
+	float : left;
+	width : 500px;
+	height : 60px;
+	line-height : 55px;
+	text-align : center;
+}
+#footerRight > a{
+	font-size : 18px;
+	font-weight : bold;
+	text-decoration : none;
+	color : black;
+	margin-left : 40px;
+}
+#footerRight > a:first-child{
+	margin-left : 0;
+}
+#footerRight > a:hover{
+	color : red;
+	text-decoration : underline;
+}

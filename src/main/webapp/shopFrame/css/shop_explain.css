@@ -1,0 +1,326 @@
+/*공통 ====================================*/
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+
+/*fade 애니메이션 ===============*/
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+@keyframes refade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+/*body ==========================*/
+#wrapper{
+    width : 1340px;
+    height : auto;
+    margin : 100px auto;
+}
+
+.explain_top_subImg_dots, #product_list, #product_buy,
+#product_cart, #product_interest{
+    cursor: pointer;
+}
+
+.title{
+    margin : 50px;
+    font-size : 24px;
+    font-weight : bold;
+}
+
+/*=====================================================*/
+/*explain_top. 상단 좌측 영역과 우측 영역========*/
+#explain_top{
+    width : 100%;
+    height : 670px;
+}
+
+#explain_top > section{
+    float : left;
+    width : 630px;
+    height : 100%;
+    border-right : 1px solid black
+}
+
+/*explain_top > 좌측 영역=====================*/
+/*explain_top_mainImg상품 메인 이미지=========*/
+div#explain_top_mainImg{
+    position : relative;
+}
+div#explain_top_mainImg > img{
+    display: inline-block;
+    margin : 30px;
+    width : 550px;
+    height : 550px;
+    border : 1px solid black;
+}
+
+/*prev, next 버튼============*/
+#prev{
+    left : 30px;
+}
+#next{
+    right : 50px;
+}
+#prev, #next{
+    cursor: pointer;
+    position : absolute;
+    user-select: none;
+    font-size : 36px;
+    color : #d1d1d1;
+    top : 50%;
+}
+#explain_top_mainImg:hover #prev, #explain_top_mainImg:hover #next{
+    top : 49%;
+    transition : 0.6s linear;
+    font-size : 44px;
+}
+#prev:hover, #next:hover{
+    color : red;
+}
+
+
+/*explain_top_mainImg=========*/
+/*explain_top_subImg메인이미지 밑에 서브 이미지 정렬*/
+#explain_top_subImg{
+    overflow: hidden;
+    overflow-y: auto;
+    margin-left : 30px;
+    width : 500px;
+    height : 90px;
+}
+/*explain_top_subImg_dots이미지들을 도트로 설정*/
+.explain_top_subImg_dots{
+    display: inline-block;
+    width : 80px;
+    height : 80px;
+    border : 1px solid black;
+    margin-right : 10px;
+}
+
+.explain_top_subImg_dots:last-child{
+	margin : none;
+}
+
+/*explain_top > aside 우측 영역============*/
+/*===========================*/
+#explain_top > aside{
+    float : left;
+    padding : 30px;
+    width : 650px;
+    margin-left : 60px;
+    height : 100%;
+}
+
+/*제품정보 영역=====================*/
+div#explain_product{
+    width : 590px;
+    height : 100%;
+}
+
+/*제품 가격=======================*/
+p#explain_price{
+    font-size : 24px;
+    font-weight : bold;
+    color : red;
+}
+
+/*제품명=======================*/
+p#explain_name{
+    font-size : 22px;
+    font-weight : 600;
+}
+
+/*사이즈 선택 영역=======================*/
+select#product_list{
+    outline : none;
+    width : 400px;
+    height : 50px;
+    font-size : 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: lightgray;
+    padding-left : 10px;
+}
+#product_list option{
+    font-size : 16px;
+    font-weight : bold;
+    color : gray;
+}
+
+/*제품 간단 정보===========================*/
+div#product_info{
+    margin-left : 10px;
+    margin-top : 20px;
+    width : 440px;
+    height : 140px;
+}
+#product_info > textarea{
+	outline : none;
+	border : none;
+	resize : none;
+    display: block;
+    font-size : 20px;
+}
+
+/*구매개수, 구매, 장바구니, 관심상품 버튼==============*/
+div#product_buy, div#product_cart,
+div#product_interest, div#product_count{
+    margin-top : 10px;
+    height : 50px;
+    border-radius : 10px;
+    border : 1px solid lightgray;
+    text-align : center;
+    line-height : 43px;
+    font-weight : bold;
+}
+div#product_buy, #product_count{
+    width : 400px;
+}
+div#product_cart, #product_interest{
+    display: inline-block;
+    width : 197px;
+}
+input#product_count_field{
+	font-size : 20px;
+	display : inline-block;
+	margin-left : 50px;
+	padding-left : 50px;
+	width : 150px;
+	height : 46px;
+	border-width : 0 0 0 1px;
+	border-color : #fefefe;
+	outline : none;
+}
+
+span#keep{
+    display : none;
+    vertical-align: middle;
+    font-size : 30px;
+}
+/*=====================================================*/
+/*explain_navi 북마크 내비게이션영역==============*/
+nav#explain_navi{
+	z-index : 1;
+    position : sticky;
+    background-color: white;
+    top : 99px;
+    clear : both;
+    margin : 50px auto;
+    width : 100%;
+    height : 70px;
+    border-top : 2px double black;
+    border-bottom : 1px solid black;
+}
+
+/*북마크 영역==============*/
+a.explain_bookmark{
+    text-decoration: none;
+    color : black;
+    cursor : pointer;
+    display: inline-block;
+    margin-left : 20%;
+    text-align: center;
+    height : 70px;
+    line-height : 65px;
+}
+/*북마크 버튼==============*/
+.explain_bookmark:hover{
+    color : red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*=====================================================*/
+/*explain_images 상품 상세이미지 영역======*/
+div#explain_images{
+    width : 90%;
+    height : auto;
+    margin : 40px auto;
+    border : 1px solid black;
+}
+
+div#explain_images img{
+	display : inline-block;
+	width : 1204px;
+}
+/*=====================================================*/
+/*explain_info 상품 사이즈 정보 영역======*/
+div#explain_info{
+    border-top : 1px solid lightgray;
+    width : 100%;
+    height : 300px;
+}
+
+table#info_table{
+    margin-top : 50px;
+    margin-left : 50px;
+    width : 800px;
+    border-collapse: collapse;
+}
+
+#info_table caption{
+    margin-bottom : 30px;
+    text-align: left;
+    font-size : 24px;
+    font-weight : bold;
+    color : #383838;
+}
+#info_table th{
+    height : 30px;
+    border : 1px solid gray;
+}
+#info_table td{
+    height : 100px;
+    border : 1px solid gray;
+}
+
+/*=====================================================*/
+/*explain_wiki 상품 위키 영역======*/
+div#explain_wiki{
+	width : 1340px;
+    margin-top : 50px;
+    height : auto;
+    border-top : 1px solid lightgray;
+    padding-bottom : 100px;
+    position : relative;
+}
+textarea#wiki_text{
+	resize : none;
+    display: block;
+    margin : auto;
+    font-size : 24px;
+}
+
+span#wikiBtn, span#updateWikiBtn{
+	text-align : center;
+	cursor : pointer;
+	display : inline-block;
+	position : absolute;
+	bottom : 30px;
+	right : 60px;
+	width : 80px;
+	height : 30px;
+	line-height : 30px;
+	border-radius : 10px;
+	border : 1px solid black;
+}
+span#wikiBtn:hover, span#updateWikiBtn:hover{
+	background-color : #efefef;
+}
+span#updateWikiBtn{
+	display : none;
+}
+
+/*=====================================================*/
+/*explain_like 추천 상품 영역======*/
+div#explain_like{
+    width : 100%;
+    border-top : 1px solid lightgray;
+}

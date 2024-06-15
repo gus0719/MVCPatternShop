@@ -1,0 +1,171 @@
+@charset "UTF-8";
+#wrapper{min-width : 1200px;}
+
+.header {
+	margin : 0 auto;
+	width : 1200px;
+	height : 100px;
+	position : relative;
+}
+/* 로고 중앙에 배치
+.header > .logo {
+	width : 100px;
+	height : 50px;
+	position : absolute;
+	left : 10px;
+	top : 25px;
+}*/
+.nav1 , .nav2 {
+	position : absolute;
+	right : 0px;
+	float : left;
+}
+
+.header > .nav1{
+	width : 400px;
+	height : 40px;
+	top : 0px;
+	text-align : center;
+	padding-top : 5px;
+}
+.header > .nav1 > p{
+	font-size : 10px;
+	text-align : center;
+	vertical-align : middle;
+	display : inline;
+	padding-left : 10px;
+}
+.header > .nav1 > p:hover{cursor:pointer;}
+
+.header > .nav2{
+	width : 400px;
+	height : 60px;
+	top : 40px;
+}
+.header > .nav2 > p{
+	font-size : 25px;
+	text-align : center;
+	vertical-align : middle;
+	display : inline;
+	padding-left : 20px;
+}
+.header > .nav2 > img{
+	width : 40px;
+	height : 40px;
+	position : absolute;
+	top : 0px;
+	right : 70px;
+}
+.header > .nav2 > p:hover , .header > .nav2 > img:hover{cursor:pointer;}
+
+.main {
+	width : 600px;
+	height : 700px;
+	margin : auto;
+	position : relative;
+}
+
+.main > .logo {
+	width : 250px;
+	height : 60px;
+	position : absolute;
+	left : 175px;
+	top : 45px;
+	text-align : center;
+	cursor: pointer;
+}
+
+.main > .login {
+	width : 400px;
+	height : 490px;
+	position : absolute;
+	top : 140px;
+	left : 100px;
+}
+.login > p {
+	font-size : 13px;
+	font-weight : bold;
+	position : absolute;
+	z-index:1;
+}
+.login > p:nth-child(1){top : 0px;} /*.login �ȿ� �ִ� �±� �� 1��° �±׿� ����*/
+.login > p:nth-child(3){top : 100px;} /*.login �ȿ� �ִ� �±� �� 3��° �±׿� ����*/
+
+.login > input {
+	width : 100%;
+	height : 40px;
+	border-width : 0px 0px 1px 0px;
+	border-style : solid;
+	position : absolute;
+}
+.login > input:nth-child(2){top : 40px;} /*.login �ȿ� �ִ� �±� �� 2��° �±׿� ����*/
+.login > input:nth-child(4){top : 130px;} /*.login �ȿ� �ִ� �±� �� 4��° �±׿� ����*/
+
+/*.login �ȿ� �ִ� �±� �� 2,4��° �±׿� ���� �� �Է¶��� Ŭ�� �� ����*/
+.login > input:nth-child(2):focus , .login > input:nth-child(4):focus {
+	outline : none;
+	border-width : 0px 0px 2px 0px;
+	border-color : blue;
+}
+
+.login > input:nth-child(5) {
+	top : 220px;
+	width : 100%;
+	height : 50px;
+	border : 0px;
+	border-radius : 10px;
+	background-color : #DCDCDC;
+	color : white;
+	font-size : 20px;
+}
+.login > input:nth-child(5):hover {
+	background-color : #ccc;
+	color : black;
+	font-size : 20px;
+	font-weight : bold;
+	cursor : pointer;
+}
+
+.login > .link {
+	width : 100%;
+	height : 40px;
+	position : absolute;
+	bottom : 155px;
+	text-align : center;
+}
+
+.login > .link span {
+	cursor : pointer;
+	font-size : 13px;
+	color : black;
+	padding-left : 10px;
+	padding-right : 10px;
+	border-right : 1px solid #ccc;
+	text-decoration : none;
+}
+.login > .link span:last-child {
+	border : 0px;
+}
+
+.login > .api {
+	width : 100%;
+	height : 120px;
+	position : absolute;
+	bottom : 0px;
+}
+
+.api > input {
+	width : 100%;
+	height : 50px;
+	border : 1px solid #ccc;
+	border-radius : 10px;
+	background-color : white;
+	font-size : 18px;
+	font-weight : bold;
+	position : absolute;
+}
+.api > input:last-child{top:70px;}
+
+.api > input:hover {
+	background-color : #ccc;
+}

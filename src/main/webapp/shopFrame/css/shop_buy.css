@@ -1,0 +1,621 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo{
+	display : block;
+	margin : 50px auto;
+	cursor : pointer;
+}
+
+#shopBuyBtn{
+	cursor : pointer;
+}
+a, a:active, a:focus, a:hover {
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+button {
+    appearance: auto;    
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;    
+    border-image: initial;
+}
+
+section {   /* 섹션 기본 설정 */
+    display: block;
+    unicode-bidi: isolate;
+    background-color: #fff; 
+    padding:32px;
+}
+
+#__layout { /* 전체 불투명도 */
+    opacity: 1;
+}
+
+
+
+.container.buy{ /* 전체 배경색 */
+    background-color: #f4f4f4;
+}
+
+.content {  /* 내용이 들어갈 div 틀 */
+    margin: 0 auto;
+    max-width: 780px;
+    padding: 20px 40px 160px;
+}
+
+.wrapper{  /* 임시로 만든 헤더와의 간격 */
+    padding-top: 92px;
+    position: relative;
+}
+
+.product_info_area { /* 구매하려는 상품 div  */
+    padding: 32px;
+    background-color: #fff;
+}
+
+.product_info{  /* 구매하려는 상품 div 내부 */
+    align-items: center;   
+    display: flex;
+    width: 100%;
+}
+
+
+
+.product {  /* 구매하려는 상품 div 사진 위치  */
+    border-radius: 10px;
+    flex-shrink: 0;
+    height: 80px;
+    padding-top: 0;
+    width: 80px;
+    background-color: rgb(235, 240, 245);
+}
+
+.display_tag_item.product_inner_tag{    /* 상품 사진 div*/
+    border-radius: 6px;
+    height: 26px;
+    left: 8px;
+    line-height: 17px;
+    padding: 0;
+    top: 8px;
+    width: 26px;
+}
+
+.image.full_width {
+    height: 100%;
+    width: 100%;
+}
+
+.product_detail{    /* 상품 div 내부 설명 div 위치 */ 
+    flex: 1;
+    overflow: hidden;
+    padding-left: 16px;
+}
+
+.product_detail .model_number { /* 상품 모델 번호  */
+    display: block;
+    font-size: 14px;
+    line-height: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.product_detail .model_ko, .product_detail .model_title{ /* 모델 타이틀 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.product_detail .model_ko{ /* 상품명 위치 */
+    color: rgba(34, 34, 34, .5);
+    font-size: 13px;
+    letter-spacing: -.07px;
+    letter-spacing: -.05px;
+    line-height: 16px;
+    margin-top: 2px;
+}
+
+.product_detail .model_desc { /* 상품 사이즈 */
+    align-items: flex-start;
+    display: flex;
+    gap: 14px;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+.display_item.thick_separator{ /* 설명 사이 공간 */
+    height: 8px;
+   }
+
+
+
+
+.section_title { /* 섹션 내 주제 (주소, 방법) */
+    align-items: center;
+    display: flex;
+    padding-bottom: 12px;
+}
+
+section .section_title .title_txt { /* 배송주소 위치 */
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -.09px;
+    letter-spacing: -.15px;
+    line-height: 22px;
+}
+
+.section_title .add_more_btn {  /* 새 주소 추가 */
+    color: rgba(34, 34, 34, .5);
+    font-size: 13px;
+    letter-spacing: -.07px;
+    margin-left: auto;
+    padding-left: 2px;
+}
+
+.delivery_info { /* 개인정보 위치  */
+    padding-right: 80px;
+    position: relative;
+}
+
+.info_box { /* 개인정보 1줄마다 css */
+    letter-spacing: -.15px;
+    line-height: 17px;
+    overflow: hidden;
+}
+
+.title { /* 받는 분, 연락처, 배송주소 */
+    color: rgba(34, 34, 34, .5);
+    float: left;
+    font-size: 13px;
+    letter-spacing: -1px;
+    letter-spacing: -.07px;
+    min-width: 80px;
+}
+
+.desc { /* 이름, 전화번호, 주소 */
+    font-size: 14px;
+    letter-spacing: -.21px;
+    overflow: hidden;
+}
+
+
+
+.btn.btn_edit { /* 배송 주소 수정 버튼 */
+    margin-top: -17px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.button_shipping_memo_wrap { /* 배송 방법 선택 위치 */
+    margin-top: 12px;
+    position: relative;
+}
+
+.button_shipping_memo{ /* 배송 버튼 선택 css */
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    cursor: pointer;
+    flex-grow: 0;
+    font-size: 14px;
+    gap: 4px;
+    height: 48px;
+    padding: 14px 12px;
+    text-align: left;
+    width: 100%;
+}
+
+.button_shipping_memo .updated_memo { /* 선택한 버튼 css */
+    color: #222;
+    display: inline-block;
+    max-width: calc(100% - 20px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.button_shipping_memo .ico-arr-right{ /* 아이콘 위치 */
+    float: right;
+    height: 22px;
+    position: absolute;
+    right: 8px;
+    top: 13px;
+    width: 22px;
+}
+
+.section_unit+.section_unit { /* 배송 방법 탭 */
+    border-top: 1px solid #ebebeb;
+    margin-top: 22px;
+    padding-top: 15px;
+}
+
+.section_title { /* 배송 방법 위치 */
+    align-items: center;
+    display: flex;
+    padding-bottom: 12px;
+}
+
+.delivery_service_option { /* 배송방법 생김새 css */
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 12px 15px;
+}
+
+.delivery_service_option.selected { /* 선택되면 테두리 검은색으로 변경 */
+    border-color: #222;
+}
+
+.way_info { /* 배송 방법 이미지 설정 */
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.way-status-thumbnail, .way_img { /* 배송 방법 이미지 크기 */
+    height: 40px;
+    width: 40px;
+}
+
+.way_desc {
+    flex: 1;
+}
+
+.company { /* 배송 방법 설명 */
+    font-size: 13px;
+    letter-spacing: -.07px;
+}
+
+.sub_text { /* 배송방법 설명 */
+    color: rgba(34, 34, 34, .5);
+    font-size: 12px;
+    height: 14px;
+    letter-spacing: -.06px;
+    line-height: 14px;
+    margin-top: 4px;
+}
+
+.company .badge_title { /* 폰트 굵기 */
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+.delivery_service_option:not(:first-of-type) { /* 창고보관 탭 위치 */
+    margin-top: 8px;
+}
+
+.company .ico-help{ /* 창고보관 도움 아이콘 위치 */
+    height: 16px;
+    margin-left: 3px;
+    margin-top: 1px;
+    vertical-align: top;
+    width: 16px;
+}
+
+.lg .order_discount .method_title, .md .order_discount .method_title {/* 쿠폰 포인트 */
+    padding: 16px 0 13px;
+}
+
+.main_title, .section_tag { /* 쿠폰 포인트 */
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -.15px;
+}
+
+.main_title .sub_title {
+    color: rgba(34, 34, 34, .5);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -.06px;
+    padding-left: 5px;
+}
+.section_input .input_coupon { /*쿠폰, 포인트 안에 텍스트를 넣기위해 포지션 부여  */
+    position: relative;
+}
+
+.section_input .input_coupon, .section_input .input_credit{ /* 쿠폰, 포인트 칸 */
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    height: 48px;
+    line-height: 100%;
+    margin-right: 8px;
+    padding: 14px 12px;
+    text-align: left;
+    width: calc(100% - 84px);
+    margin-top: 8px;
+}
+
+.section_input .coupon_name { /* 사용가능한 쿠폰 안에 내용 */
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    color: rgba(34, 34, 34, .3);
+    display: -webkit-box;
+    overflow: hidden;
+    padding-right: 12px;
+    text-overflow: ellipsis;
+}
+
+.section_input .coupon_name.disabled { /* 쿠폰 사용 불가시 css */
+    color: rgba(34, 34, 34, .3);
+    cursor: not-allowed;
+}
+
+.section_input .btn_use_coupon, .section_input .btn_use_credit{ /* 쿠폰 버튼  */
+    background: #333;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: -.06px;
+    line-height: 14px;
+    padding: 5px 10px;
+    
+}
+
+.section_input .coupon_arrow { /* 쿠폰 버튼 내 화살표 위치 */
+    height: 22px;
+    position: absolute;
+    right: 8px;
+    top: 13px;
+    width: 22px;
+}
+
+.info_point .value_current { /* 보유 포인트 */
+    color: rgba(34, 34, 34, .8);
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 8px;
+}
+
+.payment_item { /* 계좌 등록 div*/
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    display: flex;
+    font-size: 14px;
+    height: 62px;
+    justify-content: space-between;
+    letter-spacing: -.21px;
+    padding: 11px 8px 13px 9px;    
+}
+
+.payment_item.request { /* 계좌 등록 div*/
+    background-color: #fafafa;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    color: #222;
+    font-size: 14px;
+    letter-spacing: -.21px;
+    width: 100%;
+}
+
+.payment_detail { /* 계좌 등록 */
+    cursor: pointer;
+    position: relative;
+}
+
+.payment_item.selected {/* 게좌 등록내부 */
+    border: 1px solid #222;
+}
+
+.payment_item .info_wrap {
+    flex: 1;
+}
+
+.description {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -.21px;
+}
+
+.btn_card_add { /* 카드 추가 */
+    color: rgba(34, 34, 34, .5);
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -.07px;
+    margin-left: auto;
+    padding-left: 2px;
+}
+
+.btn_card_add { /* 새 카드 추가 */
+    color: rgba(34, 34, 34, .5);
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -.07px;
+    margin-left: auto;
+    padding-left: 2px;
+}
+
+.clickable_card { /* 카드 간편결제 */
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    display: flex;
+    height: 62px;
+    padding: 11px 8px 13px 9px;
+}
+
+.main_title .section_tag { /* 간편 결제 옆 보라박스 */
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 5px;
+    padding: 4px 3px;
+    margin-top: 8px;
+}
+
+.pay_box { /* 결제 방법 선택 */
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    display: flex;
+    height: 60px;
+    padding: 10px 16px;
+}
+
+.pay_method { /* 결제 선택 컨테이너 */
+    display: flex;
+    flex-flow: row wrap;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.pay_item { /* 결제 선택 작은박스  */
+    cursor: pointer;
+    display: flex;
+    flex-basis: calc(33.3333% - 4px);
+    flex-direction: column;
+}
+
+.cardmain_title { /* 결제 방법 선택 텍스트 위치 */
+    font-size: 14px;
+    letter-spacing: -.21px;
+}
+
+.pay_img { /* 결제 이미지 선택 */
+    height: 40px;
+    margin-left: auto;
+    width: 40px;
+}
+
+.payment_footer{ /* 결제 설명    */
+    color: rgba(34, 34, 34, .8);
+    font-size: 13px;
+    letter-spacing: -.07px;
+    line-height: 16px;
+    padding-top: 11px;
+}
+
+.display_line.title_description{
+    display: flex;
+}
+
+.title_wrap .title {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.display_item.plain_short_bottom_margin .title_wrap{
+    padding-bottom: 12px;
+}
+
+.display_paragraph { /* 최종 주문정보 p태그 공백 */
+    white-space: pre-wrap;
+}
+
+.display_line.title_description .line_description, .display_line.title_description_accessory_subtitle .line_description { /* 가격 등의 내용 우측 정렬 */
+    flex: 1;    
+    min-width: 66px;
+}
+
+.title_wrap{ /* 최종 주문정보 텍스트 위치 */
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-lookup.bold { /* 가격  */
+    font-weight: 700;
+    text-align: right;
+}
+
+.display_line.title_description .description_wrap, .display_line.title_description_accessory_subtitle .description_wrap{
+    flex: 1;
+}
+
+address, em {
+    font-style: normal;
+}
+
+.review_section .display_item .line+.line { /* 최종 주문 정보 줄간격 */
+    margin-top: 6px;
+}
+
+#finalcash{
+    background-color: rgb(250, 250, 250);
+}
+
+.display_line.heavy_text>.description_wrap { /* 최종가격 */
+    padding-top: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -.3px;
+    text-align: right;
+}
+
+.description_wrap{
+    text-align: right;
+}
+
+.display_paragraph {
+    white-space: pre-wrap;
+}
+.md .order-agreements-button, .mo .order-agreements-button, .sm .order-agreements-button { /* 결제버튼 div */
+    bottom: 0;
+    left: 0;
+    padding: 10px 8px;
+    position: -webkit-sticky;
+    position: sticky;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid #ebebeb;
+}
+
+.lg .order-agreements-button { /* 결제버튼 */
+    padding: 24px 32px 32px;
+}
+
+.display_button.large { /* 결제버튼 */
+    font-size: 14px;
+    height: 42px;
+    padding: 0 18px;
+    width: 140px;
+}
+
+.display_button.block{
+    width: 100%;
+    border-radius: 10px;
+}
+

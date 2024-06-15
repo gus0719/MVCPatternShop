@@ -1,0 +1,65 @@
+div#main_banner{
+    margin : 50px auto;
+    width : 100%;
+    height : 500px;
+    border : 1px solid black;
+    position : relative;
+}
+div#main_banner > img{
+    width : 100%;
+    height : 100%;
+    animation : fade 1s ease;
+    cursor: pointer;
+}
+
+@keyframes fade {
+    from{opacity: .5;}
+    to{opacity: 1;}
+}
+@keyframes refade {
+    from{opacity: .5;}
+    to{opacity: 1;}
+}
+
+
+/*이전, 다음 버튼*/
+#prevBtn, #nextBtn{
+    position : absolute;
+    top : 49%;
+    font-size : 36px;
+    background-color : transparent;
+    cursor: pointer;
+    transition : 0.4s linear;
+}
+#prevBtn:hover, #nextBtn:hover{
+    color : red;
+}
+#prevBtn{
+    left : 0;
+}
+#nextBtn{
+    right : 0;
+}
+
+/*도트 인덱스*/
+div#banner_dots{
+    position : absolute;
+    bottom : 10px;
+    width : 100%;
+    text-align : center;
+}
+span.banner_dot{
+    background-color : white;
+    margin : 0 1px;
+    cursor: pointer;
+    display: inline-block;
+    width : 15px;
+    height : 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: 0.4s linear;
+}
+
+span.banner_dot:hover{
+    background-color : gray;
+}

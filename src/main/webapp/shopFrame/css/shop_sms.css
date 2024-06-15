@@ -1,0 +1,45 @@
+#wrapper {
+	margin: auto;
+	width: 1340px;
+}
+
+table {
+	width: 500px;
+	height: 200px;
+	border: 0px solid black;
+	margin: auto;
+	text-align: center;
+}
+
+td {
+	border: 0px solid black;
+}
+
+.textfiled {
+	width: 98%;
+	font-size: 40px;
+	height: 100%;
+}
+
+.button {
+	width: 100px;
+	height: 50px;
+	font-weight: bold;
+	font-size: 15px;
+	border: 0px solid black;
+}
+
+.tr1 {
+	background-color: #DCDCDC;
+	color: white;
+	height: 50px;
+}
+
+.tr2 {
+	height: 80px;
+}
+
+.tr3 {
+	background-color: #DCDCDC;
+	height: 70px;
+}

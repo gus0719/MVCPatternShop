@@ -1,0 +1,168 @@
+@charset "UTF-8";
+#wrapper{min-width : 1340px;}
+/*header 부분*/
+.header {
+	margin : 0 auto;
+	width : 1200px;
+	height : 100px;
+	position : relative; /*기본 위치값*/
+}
+.header > .logo {
+	width : 100px;
+	height : 50px;
+	position : absolute; /*위치값 고정*/
+	left : 10px;
+	top : 25px;
+}
+.header > .logo:hover{
+	cursor : pointer;
+}
+.nav1 , .nav2 {
+	position : absolute; /*위치값 고정*/
+	right : 0px;
+	float : left; /*왼쪽 정렬*/
+}
+
+.header > .nav1{
+	width : 400px;
+	height : 40px;
+	text-align : center;
+	padding-top : 5px; /*아래쪽으로 이동*/
+}
+.header > .nav1 > p{
+	font-size : 10px;
+	text-align : center;
+	vertical-align : middle;
+	display : inline; /*vertical-align을 사용하기 위해 inline으로 바꿈*/
+	padding-left : 10px; /*왼쪽으로 이동*/
+}
+.header > .nav1 > p:hover{cursor:pointer;}
+
+.header > .nav2{
+	width : 400px;
+	height : 60px;
+	top : 40px;
+}
+.header > .nav2 > p{
+	font-size : 25px;
+	text-align : center;
+	vertical-align : middle;
+	display : inline; /*vertical-align을 사용하기 위해 inline으로 바꿈*/
+	padding-left : 20px; /*왼쪽으로 이동*/
+}
+.header > .nav2 > img{
+	width : 40px;
+	height : 40px;
+	position : absolute; /*위치값 고정*/
+	top : 0px;
+	right : 70px;
+}
+/*마우스 올려놓았을 시 실행*/
+.header > .nav2 > p:hover , .header > .nav2 > img:hover{cursor:pointer;}
+
+/*main 부분*/
+.main {
+	width : 600px;
+	height : 1050px;
+	text-align : left;
+	margin : auto;
+	position : relative; /*기본 위치값*/
+}
+/*로그인 정보*/
+.main > h1 {
+	width : 100%;
+	height : 40px;
+	font-size : 25px;
+	border-bottom : 1px solid black;
+}
+/*내 계정 소제목*/
+.main > h3 {
+	font-size : 20px;
+	font-weight : bold;
+	padding-top : 10px; /*아래로 이동*/
+}
+/*개인정보 소제목*/
+.main > h3:last-child{
+	font-size : 20px;
+	font-weight : bold;
+	padding-top : 60px; /*아래로 이동*/
+}
+/*광고성 정보 동의*/
+.main > h4 {
+	font-size : 15px;
+	font-weight : bold;
+	padding-top : 50px; /*아래로 이동*/
+}
+.main > p {
+	font-size : 15px;
+	padding-top : 10px; /*아래로 이동*/
+}
+
+/*계정 및 개인 정보*/
+.main > div {
+	border-width : 0px 0px 1px 0px; /*border 설정 >> 아래만 적용*/
+	border-style : solid;
+	border-color : black;
+	width : 600px;
+	height : 30px;
+}
+.main > div > input {
+	background-color : white;
+	width : 40px;
+	height : 30px;
+	border : 1px solid black;
+	border-radius : 10px;
+	position : absolute;
+	right : 0px;
+}
+.main > div > .txt {
+	display : inline-block;
+	left : 0px;
+	border : 0px;
+	border-radius : 0px;
+	width : 550px;
+	height : 26px;
+	padding-left : 5px;
+}
+
+/*마우스 올려놓았을 시 실행*/
+.main > div > input:hover {cursor : pointer; box-shadow:0px 0px 5px black;}
+
+/*
+광고성 정보 동의 여부
+checkbox
+동의*/
+.main > .chk1 > input:nth-child(2) , .main > .chk2 > input:nth-child(2){
+	width : 20px;
+	height : 20px;
+	right : 110px;
+}
+/*거부*/
+.main > .chk1 > input:nth-child(4) , .main > .chk2 > input:nth-child(4){
+	width : 20px;
+	height : 20px;
+	right : 0px; 
+}
+/*label*/
+/*동의*/
+.main > .chk1 > label:nth-child(1) , .main > .chk2 > label:nth-child(1) {
+	position : absolute;
+	right : 140px;
+}
+/*거부*/
+.main > .chk1 > label:nth-child(3) , .main > .chk2 > label:nth-child(3){
+	position : absolute;
+	right : 30px;
+}
+
+/*회원 탈퇴*/
+.main > span {
+	color : black;
+	position : absolute;
+	bottom : 0px;
+	padding-bottom : 50px;
+}
+.main > span:hover {
+	cursor : pointer;
+	color : blue;
+}

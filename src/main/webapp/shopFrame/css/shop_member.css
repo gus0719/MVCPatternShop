@@ -1,0 +1,155 @@
+@charset "UTF-8";
+#wrapper{min-width : 1200px;}
+
+.header {
+	margin : 0 auto;
+	width : 1200px;
+	height : 150px;
+	position : relative;
+}
+.header > .logo {
+	width : 100px;
+	height : 50px;
+	position : absolute;
+	left : 10px;
+	top : 25px;
+	cursor: pointer;
+}
+.nav1 , .nav2 {
+	position : absolute;
+	right : 0px;
+	float : left;
+}
+
+.header > .nav1{
+	width : 400px;
+	height : 40px;
+	top : 0px;
+	text-align : center;
+	padding-top : 5px;
+}
+.header > .nav1 > p{
+	font-size : 10px;
+	text-align : center;
+	vertical-align : middle;
+	display : inline;
+	padding-left : 10px;
+}
+.header > .nav1 > p:hover{cursor:pointer;}
+
+.header > .nav2{
+	width : 400px;
+	height : 60px;
+	top : 40px;
+}
+.header > .nav2 > p{
+	font-size : 25px;
+	text-align : center;
+	vertical-align : middle;
+	display : inline;
+	padding-left : 20px;
+}
+.header > .nav2 > img{
+	width : 40px;
+	height : 40px;
+	position : absolute;
+	top : 0px;
+	right : 70px;
+}
+.header > .nav2 > p:hover , .header > .nav2 > img:hover{cursor:pointer;}
+
+.main {
+	width : 600px;
+	height : 850px;
+	text-align : center;
+	margin : auto;
+	position : relative;
+}
+
+.main > .member {
+	width : 400px;
+	height : 950px;
+	position : absolute;
+	top : 100px;
+	left : 100px;
+}
+
+.member > p {
+	font-size : 13px;
+	font-weight : bold;
+	position : absolute;
+	 z-index:1;
+}
+.member > p:nth-child(1){top : 0px;} /*.member�ȿ� �ִ� �±� �� 1��° �±׿� ����*/
+.member > p:nth-child(3){top : 100px;} /*.member �ȿ� �ִ� �±� �� 3��° �±׿� ����*/
+.member > p:nth-child(5){top : 200px;} /*.member �ȿ� �ִ� �±� �� 5��° �±׿� ����*/
+.member > p:nth-child(7){top : 300px;} /*.member �ȿ� �ִ� �±� �� 7��° �±׿� ����*/
+.member > p:nth-child(9){top : 400px;} /*.member �ȿ� �ִ� �±� �� 9��° �±׿� ����*/
+.member > p:nth-child(11){top : 500px;}
+.member > p:nth-child(13){top : 600px;}
+
+.member > input {
+	width : 100%;
+	height : 40px;
+	border-width : 0px 0px 1px 0px;
+	border-style : solid;
+	position : absolute;
+	left : 0px;
+}
+.member > input:nth-child(2){top : 40px;} /*.member �ȿ� �ִ� �±� �� 2��° �±׿� ����*/
+.member > input:nth-child(4){top : 140px;} /*.member�ȿ� �ִ� �±� �� 4��° �±׿� ����*/
+.member > input:nth-child(6){top : 240px;} /*.member�ȿ� �ִ� �±� �� 6��° �±׿� ����*/
+.member > input:nth-child(8){top : 340px;} /*.member�ȿ� �ִ� �±� �� 8��° �±׿� ����*/
+.member > input:nth-child(10){top : 440px;} /*.member�ȿ� �ִ� �±� �� 10��° �±׿� ����*/
+.member > input:nth-child(12){top : 540px;}
+.member > input:nth-child(14){top : 640px;}
+
+.member > input:nth-child(2):focus , .member > input:nth-child(4):focus , .member > input:nth-child(6):focus , .member > input:nth-child(8):focus , .member > input:nth-child(10):focus , .member > input:nth-child(12):focus , .member > input:nth-child(14):focus {
+	outline : none;
+	border-width : 0px 0px 2px 0px;
+	border-color : blue;
+}
+
+.member > input:nth-child(15){
+	position : absolute;
+	top : 750px;
+	width : 25px;
+	height : 25px;
+	border : 1px solid;
+}
+.member > label:nth-child(16){
+	position : absolute;
+	top : 755px;
+	left : 35px;
+}
+
+.member > input:nth-child(17){
+	position : absolute;
+	top : 800px;
+	width : 25px;
+	height : 25px;
+	border : 1px solid;
+}
+.member > label:nth-child(18){
+	position : absolute;
+	top : 805px;
+	left : 35px;
+}
+
+.member > input:nth-child(19) {
+	top : 870px;
+	width : 100%;
+	height : 50px;
+	border : 0px;
+	border-radius : 10px;
+	background-color : #DCDCDC;
+	color : white;
+	font-size : 20px;
+}
+.member > input:nth-child(19):hover {
+	background-color : #ccc;
+	color : black;
+	font-size : 20px;
+	font-weight : bold;
+	cursor : pointer;
+}

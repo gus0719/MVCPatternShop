@@ -1,0 +1,45 @@
+#wrapper{min-width : 1340px;}
+.main {
+	width : 1000px;
+	height : 1000px;
+	margin : 0 auto;
+	margin-top : 100px;
+}
+
+.main > h1 {
+	padding-top : 50px;
+}
+
+.productMain {
+	width : 200px;
+	height : 222px;
+	float : left;
+	margin-left : 50px;
+	margin-bottom : 80px;
+}
+
+.productMain > .productImg {
+	width : 200px;
+	height : 200px;
+	background-size : 200px 200px;
+	margin-top : 100px;
+	display : block;
+	border : 1px solid black;
+}
+
+.productMain > .productImg:hover {
+	cursor : pointer;
+	box-shadow : 0px 0px 5px black;
+	border-radius : 15px;
+}
+
+.productMain > .productName ,  .productMain > .productPrice , .productMain > .productBrand{
+	width : 200px;
+	height : 22px;
+	text-align : center;
+	font-size : 20px;
+	display : inline-block;
+	text-align : left;
+}
+ .productMain > .productPrice{font-size : 15px;}
+ .productMain > .productBrand{font-size : 18px; font-weight : bold;}

@@ -1,0 +1,49 @@
+main#wrapper{
+	width : 1000px;
+	height : auto;
+	margin : auto;
+}
+
+#title{
+    line-height: 70px;
+    width : 100%;
+    height : 70px;
+    border-bottom : 2px solid black;
+    font-size : 30px;
+    font-weight: bold;
+}
+
+ul#buy_list{
+	list-style-type : none;
+	margin-left : 0;
+	padding-left : 0;
+}
+
+ul#buy_list > li{
+	width : 100%;
+	height : 150px;
+	margin-bottom : 20px;
+}
+
+ul#buy_list > li > img#product_img{
+	display : block;
+	float : left;
+	width : 130px;
+	height : 130px;
+	margin : 10px;
+}
+
+div#product_info{
+	display : block;
+	float : left;
+	width : 400px;
+	height : 120px;
+	margin : 15px;
+}
+
+span#product_name, span#product_price, span#user_address{
+	font-size : 20px;
+}
+span#product_name{
+	font-weight : bold;
+}

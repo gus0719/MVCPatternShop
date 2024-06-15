@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+/* 공통 ====================*/
+p.title{
+    font-size : 28px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    border-bottom : 1px solid lightgray;
+}
+
+/* 상품 목록 =================================*/
+ul#popular_items, ul#top5_items, ul#interest, ul#oneHundThou{
+    margin-left : 0;
+    padding-left : 0;
+    list-style-type: none;
+}
+
+body#overflowX{
+    overflow-x: hidden;
+}
+/*메인===============================================*/
+main#wrapper{
+    display: block;
+    width : 1340px;
+    height : 3500px;
+    margin : auto;
+    
+    position : relative;
+}
+
+/*컨텐츠=========================================*/
+section#contents{
+    display: block;
+    float : left;
+    width : 1220px;
+    height : 100%;
+}
+/*행사 상품=============================*/
+div#content_event{
+    width : 100%;
+    height : 500px;
+    border : 1px solid black;
+}
+
+
+/*상품명, 가격 =========================*/
+span.items_name, span.items_price{
+    margin-top : 10px;
+    display: inline-block;
+    text-align: center;
+    width : 100%;
+    height : 40px;
+    overflow: hidden;
+}
+span.items_price{
+    font-size : 20px;
+    font-weight: bold;
+}
+
+/*======================================*/
+/*인기 상품, 관심 상품, 10만원 이하 상품 =====================*/
+div#content_popular, div#interestItems, div#lessThanPrice{
+    width : 100%;
+    height : 700px;
+}
+
+ul#popular_items, ul#interest, ul#oneHundThou{
+    margin-left : -20px;
+}
+ul#popular_items > li, ul#interest > li, ul#oneHundThou > li{
+    display: inline-block;
+    margin-top : 2px;
+    margin-left : 30px;
+    width : 375px;
+    height : 300px;
+    cursor: pointer;
+    border-width : 1px;
+    border-color: #ffffff;
+    border : 1px solid gray;
+}
+ul#popular_items > li:hover, ul#interest > li:hover, ul#oneHundThou > li:hover{
+    box-shadow: 2px 2px 5px black;
+}
+
+ul#popular_items > li > img, ul#interest > li > img, ul#oneHundThou > li > img{
+    display: block;
+    margin : auto;
+    width : 350px;
+    height : 200px;
+}
+
+/*======================================*/
+/*TOP 5 상품 ===========================*/
+div#content_top5{
+    margin-top : 30px;
+    padding-top : 10px;
+    width : 100%;
+    height : 500px;
+    background-color : #f9f2ed;
+    position : relative;
+}
+/*TOP 5 상품 목록============*/
+ul#top5_items > li{
+    margin-left : 30px;
+    float : left;
+    width : 220px;
+    height : 320px;
+    cursor: pointer;
+}
+ul#top5_items > li:first-child{
+    margin-left : 0;
+}
+ul#top5_items > li:hover img{
+    border : 1px solid red;
+}
+/*TOP 5 상품 이미지*/
+ul#top5_items > li > img{
+    background-color : #d6d6d6;
+    margin : 5px 10px;
+    display: inline-block;
+    width : 200px;
+    height : 200px;
+    border-radius: 50%;
+}
+
+
+/*TOP 5 영역 좌 우 채우기======*/
+div#content_top5::before{
+    position : absolute;
+    content : "";
+    z-index: -1;
+    top : 0;
+    right : 100%;
+    width : 100%;
+    height : 100%;
+    background-color : #f9f2ed;
+}
+div#content_top5::after{
+    position : absolute;
+    content : "";
+    z-index: -1;
+    top : 0;
+    left : 100%;
+    width : 100%;
+    height : 100%;
+    background-color : #f9f2ed;
+}
+
+/*======================================*/
+/*TOP 5 영역 타이틀 밑줄 지우기*/
+#content_top5 > p.title{
+    border : none;
+}

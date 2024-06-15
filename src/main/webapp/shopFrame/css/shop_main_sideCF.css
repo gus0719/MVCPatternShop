@@ -1,0 +1,33 @@
+/*======================================*/
+/*사이드 광고========================*/
+aside#sideCF{
+    margin-top : 44px;
+    display: block;
+    float : left;
+    width : 120px;
+    height : 3500px;
+}
+
+div#advertisement{
+    position : sticky;
+    top : 100px;
+    width : 120px;
+    height : 562px;
+    border : 1px solid black;
+    background-color: white;
+}
+
+#advertisement > p{
+    margin : 5px 0 0 0;
+    padding-bottom : 5px;
+    font-size : 14px;
+    text-align: center;
+    border-bottom : 1px solid black;
+}
+#advertisement > img{
+	display : inline-block;
+	margin : auto;
+	width : 117px;
+	height : 133px;
+	cursor: pointer;
+}

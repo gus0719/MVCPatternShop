@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+
+#container{
+    width : 1000px;
+    height : 1400px;
+    margin : 100px auto;
+}
+
+
+/* 페이지 제목 ============================
+*/
+#title{
+    margin-top : 50px;
+    padding-bottom : 10px;
+    font-size : 30px;
+    font-weight: bold;
+    border-bottom : 1px solid gray;
+    position : relative;
+}
+#title::before{
+    position : absolute;
+    margin-top : 50px;
+    top : 0;
+    right : 100%;
+    width : 100%;
+    content : "";
+    border-bottom : 1px solid gray;
+}
+#title::after{
+    position : absolute;
+    margin-top : 50px;
+    top : 0;
+    left : 100%;
+    width : 100%;
+    content : "";
+    border-bottom : 1px solid gray;
+}
+
+#logo{
+	cursor : pointer;
+}
+/* 상품 정보 입력 ==========================
+*/
+.info{
+    text-align : center;
+    width : 150px;
+    height : 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.inputs{
+    width : 500px;
+    min-height : 50px;
+    border : 1px solid lightgray;
+}
+
+
+/* 상품명, 브랜드, 가격, 판매자 =================================
+*/
+#product_name, #product_brand, #product_price, #product_seller{
+    width : 500px;
+    height : 50px;
+    border: none;
+    font-size : 24px;
+}
+
+/* 카테고리 ==============================
+*/
+#product_category{
+    width : 500px;
+    height : 50px;
+    border : none;
+    font-size : 24px;
+}
+
+/* 설명 =====================
+*/
+#product_explain{
+    font-size: 18px;
+    border: none;
+    width : 500px;
+    height : 150px;
+    resize: none;
+}
+
+input, textarea{
+    cursor: pointer;
+}
+
+input:active, textarea:active{
+    cursor : text;
+}
+
+/* 설명 ===============
+*/
+#product_img{
+	display : none;
+}
+
+/* 상품 등록 버튼 ======================
+*/
+div#btnRegion{
+	width : 1000px;
+	height : 100px;
+	margin : auto;
+}
+
+#btnRegion > button{
+	width : 460px;
+	height : 60px;
+	margin : 10px;
+	background-color : #ebebeb;
+	border-radius : 10px;
+	color : black;
+	border : none;
+	font-size : 20px;
+	font-weight : bold;
+	cursor : pointer;
+}

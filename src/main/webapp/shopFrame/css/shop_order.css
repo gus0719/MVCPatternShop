@@ -1,0 +1,106 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#__layout { /* 전체 불투명도 */
+    opacity: 1;
+}
+
+.wrapper{  /* 임시로 만든 헤더와의 간격 */
+    padding-top: 92px;
+    position: relative;
+}
+
+.container{ /* 전체 배경색 */
+    background-color: #f4f4f4;
+}
+
+.content{  /* 내용이 들어갈 div 틀 */
+    margin: 0 auto;
+    max-width: 780px;
+    padding: 20px 40px 160px;    
+}
+
+.white{ /*  흰배경  */
+    background: #ffffff;
+    padding:32px;
+    height: 500px;
+}
+
+.buy{   /* 주문이 완료되었습니다 감사합니다 */
+    margin-top: 15px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    font-size: 20px;
+    text-align: center;
+    height: 120px;
+    padding:40px;
+}
+
+.info{  /*  상품배송정보 전체 div */
+    margin-top: 15px;
+    border-bottom: 1px solid gray;
+}
+
+.delivery{  /* 도착 예정일 div */
+    border-left: 4px solid green;
+    border-top:1px solid gray; 
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    height: 50px;
+    margin-top: 13px;
+}
+
+#arrive{ /* 도착 예정일 아이디 */
+    margin-top: 13px;
+}
+
+.blank{ /* 항목별 공간 */
+    margin-top: 13px;
+}
+
+.userinfo{  /* 받는 사람 정보 */
+    width:400px;
+    column-width: 100 120;
+    margin-top: 13px;    
+}
+
+.userinfo td:nth-child(2){ /* 받는 사람 정보 내용 진하게 */
+    font-weight: 700;
+}
+
+
+.sangse, .shoping{  /* 주문 상세보기 쇼핑계속하기 */
+	cursor : pointer;
+    width: 200px;
+    height: 50px;
+    float: left;
+    margin-left: 10px;
+}
+
+.buts{  /* 버튼 */
+    font-size: 12px;
+    margin-top: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.sangse{
+    border:1px solid blue;
+    background-color: white;
+    color: blue;
+}
+
+.shoping{
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+.leftt{
+    margin-left: 100px;
+}
