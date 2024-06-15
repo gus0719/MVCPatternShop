@@ -1,5 +1,5 @@
 <h1>MVC 패턴을 적용한 쇼핑몰 구축</h1>
-
+<img src = "https://github.com/gus0719/MVCPatternShop/blob/main/flowchart_project_mvc.drawio.svg">
 <h2>Controller(Servlet)</h2>
 <ul>
   <li><a href="#product">상품관리 컨트롤러</a></li>
