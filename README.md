@@ -14,13 +14,14 @@
   <dd>HTML</dd>
   <dd>CSS</dd>
   <dd>JavaScript</dd>
+  <dd>AJAX</dd>
   
   <dt>Back-End</dt>
   <dd>Java</dd>
   <dd>JSP</dd>
   <dd>Servlet</dd>
   <dd>JSTL</dd>
-  <dd>AJAX</dd>
+  
   
   <dt>DataBase</dt>
   <dd>OracleDB</dd>
