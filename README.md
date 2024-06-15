@@ -1,14 +1,14 @@
 <h1>MVC 패턴을 적용한 쇼핑몰 구축</h1>
 <img src = "https://github.com/gus0719/MVCPatternShop/blob/main/flowchart_project_mvc.svg">
-<h2>Controller(Servlet)</h2>
+<h2>목차</h2>
 <ul>
-  <li><a href="#skill">Skill</a></li>
+  <li><a href="#skill">사용 기술</a></li>
   <li><a href="#product">상품관리 컨트롤러</a></li>
   <li><a href="#member">회원관리 컨트롤러</a></li>
   <li><a href="#notification">공지사항 컨트롤러</a></li>
 </ul><br><br><br>
 
-<h2 id="skill">Skill</h2>
+<h2 id="skill">사용 기술</h2>
 <dl>
   <dt>Front-End</dt>
   <dd>HTML</dd>
