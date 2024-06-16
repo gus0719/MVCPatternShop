@@ -19,7 +19,6 @@
   <dd>Java</dd>
   <dd>JSP</dd>
   <dd>Servlet</dd>
-  <dd>JSTL</dd>
   <dd>AJAX</dd>
   
   <dt>DataBase</dt>
