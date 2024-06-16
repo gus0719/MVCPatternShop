@@ -15,8 +15,8 @@ public class ShopSMSSend {
 	//Message message = new Message();
 	
 	public String smsSend(String phone_user) {
-		 api_key = "NCS2IEVVSZRB5POG";
-		 api_key_secret = "4NOXNXYZNWF1EJVXNBLNFIMRBJWKUB77";
+		 api_key = "";
+		 api_key_secret = "";
 		Message coolsms = new Message(api_key, api_key_secret);
 		Random rd = new Random();
 		int randomNo = rd.nextInt(999999)+1;
